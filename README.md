@@ -29,6 +29,7 @@ Projektet [angular-tdd](./angular-tdd) är skapat enligt följande:
       ]
     }
     ``` 
+4. Lägg till [Storybook](https://storybook.js.org/docs/angular/get-started/install): `npx storybook init`   
 
 React
 -----
