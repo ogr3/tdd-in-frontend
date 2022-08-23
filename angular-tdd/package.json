@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:update-snapshot": "npm run test -- --update-snapshot",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": " start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook"
@@ -37,6 +38,7 @@
     "@storybook/addon-essentials": "^6.5.10",
     "@storybook/addon-interactions": "^6.5.10",
     "@storybook/addon-links": "^6.5.10",
+    "@storybook/addon-storyshots": "^6.5.10",
     "@storybook/angular": "^6.5.10",
     "@storybook/builder-webpack5": "^6.5.10",
     "@storybook/manager-webpack5": "^6.5.10",
