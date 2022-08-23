@@ -13,6 +13,6 @@ describe('AppComponent', () => {
       ]
     })
 
-    expect(screen.getByText('angular-tdd app is running!', {selector: 'span'})).toBeInTheDocument()
+    expect(screen.getByText('angular-tdd app is running!', {selector: 'div'})).toBeInTheDocument()
   })
 });
