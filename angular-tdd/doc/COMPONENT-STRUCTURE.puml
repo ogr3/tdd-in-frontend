@@ -1,0 +1,34 @@
+@startuml
+card smartcomponent [
+  En "smart" komponent
+]
+
+card dumbcomponent1 [
+  En första "dum" komponent
+  --
+  @Input a
+  @Output b
+]
+
+card dumbcomponent2 [
+  En andra "dum" komponent
+  --
+  @Input c
+  @Output d
+]
+
+card dumbcomponent3 [
+  En tredje "dum" komponent
+  --
+  @Input e
+  @Output f
+]
+
+class HttpClient {}
+
+smartcomponent .right.> HttpClient
+smartcomponent o-down-> dumbcomponent1
+smartcomponent o-down-> dumbcomponent2
+dumbcomponent1 o-down-> dumbcomponent3
+
+@enduml

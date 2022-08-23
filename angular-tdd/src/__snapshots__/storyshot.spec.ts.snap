@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots AppComponent/Button Primary 1`] = `
+<storybook-wrapper>
+  <app-root>
+    <div>
+      angular-tdd app is running!
+    </div>
+  </app-root>
+</storybook-wrapper>
+`;

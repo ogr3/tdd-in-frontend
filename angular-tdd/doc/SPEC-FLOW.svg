@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg contentStyleType="text/css" height="531px" preserveAspectRatio="none" style="width:470px;height:531px;background:#FFFFFF;"
+     version="1.1" viewBox="0 0 470 531" width="470px" xmlns="http://www.w3.org/2000/svg"
+     zoomAndPan="magnify"><defs/><g><g id="elem_open"><ellipse cx="210.1075" cy="26.8215" fill="#F1F1F1" rx="92.1075" ry="20.8215" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="137.1075" y="30.1125">Öppna komponenten</text></g><!--MD5=[bb135b1cc26a1189e04dd49d338afc62]
+entity showA--><g id="elem_showA"><rect fill="#F1F1F1" height="22.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="67" x="176.5" y="108"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="186.5" y="124.5352">A visas</text></g><g id="elem_clickbuttonB"><ellipse cx="86.8148" cy="218.563" fill="#F1F1F1" rx="80.8148" ry="18.563" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="26.8148" y="221.854">Klicka på knapp B</text></g><!--MD5=[8e46de80430d50cf20ab61e6ab5418a8]
+entity showC--><g id="elem_showC"><rect fill="#F1F1F1" height="38.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="136" x="19" y="307"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="29" y="323.5352">- C visas</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="29" y="340.0234">- Event D skickas</text></g><g id="elem_clickbuttonE"><ellipse cx="86.8148" cy="424.563" fill="#F1F1F1" rx="80.8148" ry="18.563" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="26.8148" y="427.854">Klicka på knapp E</text></g><!--MD5=[f46b51830acf338c54b99bd2049c5b4c]
+entity showF--><g id="elem_showF"><rect fill="#F1F1F1" height="22.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="65" x="54.5" y="503"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="64.5" y="519.5352">F visas</text></g><g id="elem_inputABC"><ellipse cx="333.8242" cy="218.5648" fill="#F1F1F1" rx="130.8242" ry="28.5648" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="239.3242" y="214.3383">Mata in "ABC" i input G och</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="264.8242" y="230.8266">tryck på knappen H</text></g><g id="elem_sendI"><ellipse cx="333.8148" cy="326.563" fill="#F1F1F1" rx="80.8148" ry="18.563" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="273.8148" y="329.854">Klicka på knapp E</text></g><!--MD5=[ea59fb0cc9fe4e4ef6b8b88d3c9be43b]
+link open to showA--><g id="link_open_showA"><path codeLine="28" d="M210,48.42 C210,64.87 210,87.63 210,102.57 " fill="none" id="open-to-showA" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="210,107.7,214,98.7,210,102.7,206,98.7,210,107.7" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[473764cdf6b43b39102260eb1a37da38]
+link showA to clickbuttonB--><g id="link_showA_clickbuttonB"><path codeLine="29" d="M197.3,130.07 C177.37,145.86 138.37,176.78 112.5,197.29 " fill="none" id="showA-to-clickbuttonB" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="108.46,200.49,117.9933,198.0167,112.3727,197.377,113.0124,191.7564,108.46,200.49" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[10f5f07d96306e10d693d672da2dd805]
+link clickbuttonB to showC--><g id="link_clickbuttonB_showC"><path codeLine="30" d="M87,237 C87,254.71 87,282.19 87,301.84 " fill="none" id="clickbuttonB-to-showC" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="87,306.9,91,297.9,87,301.9,83,297.9,87,306.9" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[9f267eee8b797fb97600507a7dcfe7f7]
+link showC to clickbuttonE--><g id="link_showC_clickbuttonE"><path codeLine="31" d="M87,346.01 C87,361.48 87,383.62 87,400.28 " fill="none" id="showC-to-clickbuttonE" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="87,405.7,91,396.7,87,400.7,83,396.7,87,405.7" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[6dbcff3f825b8ccfff830d6d505b9eba]
+link clickbuttonE to showF--><g id="link_clickbuttonE_showF"><path codeLine="32" d="M87,443.21 C87,459.22 87,482.55 87,497.75 " fill="none" id="clickbuttonE-to-showF" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="87,502.95,91,493.95,87,497.95,83,493.95,87,502.95" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[b1d56bdbfd7b3bf0a1d561d740217600]
+link showA to inputABC--><g id="link_showA_inputABC"><path codeLine="33" d="M222.8,130.07 C239.95,143.55 271.12,168.06 296.11,187.7 " fill="none" id="showA-to-inputABC" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="300.06,190.81,295.453,182.1051,296.1279,187.7215,290.5115,188.3964,300.06,190.81" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[99df3b98ebc7109318d82b85f2d2f5a0]
+link inputABC to sendI--><g id="link_inputABC_sendI"><path codeLine="34" d="M334,247.07 C334,264.27 334,286.14 334,302.42 " fill="none" id="inputABC-to-sendI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="334,307.71,338,298.71,334,302.71,330,298.71,334,307.71" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[ecf5602abe24eaf879952dd1645b2e07]
+@startuml
+usecase open [
+  Öppna komponenten
+]
+card showA [
+  A visas
+]
+usecase clickbuttonB [
+  Klicka på knapp B
+]
+card showC [
+  - C visas
+  - Event D skickas
+]
+usecase clickbuttonE [
+  Klicka på knapp E
+]
+card showF [
+  F visas
+]
+usecase inputABC [
+  Mata in "ABC" i input G och
+  tryck på knappen H
+]
+usecase sendI [
+  Klicka på knapp E
+]
+
+open -down-> showA
+showA -down-> clickbuttonB
+clickbuttonB -down-> showC
+showC -down-> clickbuttonE
+clickbuttonE -down-> showF
+showA -down-> inputABC
+inputABC -down-> sendI
+
+
+
+@enduml
+
+PlantUML version 1.2022.2(Sat Mar 05 17:30:19 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: sv
+Country: SE
+--></g></svg>

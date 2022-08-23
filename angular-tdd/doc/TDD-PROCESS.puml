@@ -1,0 +1,16 @@
+@startuml
+
+state plannextfeatureincomponent as "Planera nästa egenskap\nför komponenten": Definiera en viss egenskap\n som skall implementeras i\n komponenten (kan vara utseende,\n beteende eller båda).
+state storybook as "Storybook": Implementera en story,\n dvs ett exempel på hur\n den ser ut givet viss indata.
+state jest as "Spec (Jest)" : Implementera en spec,\n dvs vad som händer då man\n interagerar med komponenten.\n T.ex klickar på en knapp.\n I detta skede blir testfallet rött.
+state implementcomponent as "Implementera beteendet i\n komponenten."
+
+[*] --> plannextfeatureincomponent: starta Storybook\nstarta Jest-test i watch-mode
+plannextfeatureincomponent -right-> storybook
+storybook -> storybook: implementera egenskap i vyn\n och kontrollera hur den ser\n ut i Storybook
+storybook -down-> jest: komponentens utseende är\nrätt i Storybook
+jest -down-> implementcomponent: testfall för egenskap är klar
+implementcomponent -right-> implementcomponent:  Kontrollera löpande hur\nden nya egenskapen ser ut\ni Storybook och att jest-testfallet\nblir grönt
+implementcomponent -up-> plannextfeatureincomponent: jest-testfallet blir grönt
+
+@enduml

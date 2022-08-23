@@ -1,0 +1,39 @@
+@startuml
+usecase open [
+  Öppna komponenten
+]
+card showA [
+  A visas
+]
+usecase clickbuttonB [
+  Klicka på knapp B
+]
+card showC [
+  - C visas
+  - Event D skickas
+]
+usecase clickbuttonE [
+  Klicka på knapp E
+]
+card showF [
+  F visas
+]
+usecase inputABC [
+  Mata in "ABC" i input G och
+  tryck på knappen H
+]
+usecase sendI [
+  Klicka på knapp E
+]
+
+open -down-> showA
+showA -down-> clickbuttonB
+clickbuttonB -down-> showC
+showC -down-> clickbuttonE
+clickbuttonE -down-> showF
+showA -down-> inputABC
+inputABC -down-> sendI
+
+
+
+@enduml
