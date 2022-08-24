@@ -64,7 +64,7 @@ Storybook
 
 I storybook är det förberett för att ange @Input och @Output på ett enkelt sätt med hjälp av s.k _Args_.
 
-Se kodexempel: [input-output.component.stories.ts](../src/app/input-output/input-output.component.stories.ts)
+Se kodexempel: [../src/app/labs/lab1-input-output/input-output.component.stories.ts](../src/app/labs/lab1-input-output/input-output.component.stories.ts)
 
 Se även [Storybook, Args](https://storybook.js.org/docs/angular/writing-stories/args)
 för mer info.
