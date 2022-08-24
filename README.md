@@ -72,7 +72,7 @@ Projektet [angular-tdd](./angular-tdd) är skapat enligt följande:
 6. Lägg till för Mock Service Worker för att kunna mocka HTTP-anrop till backend i stories.
    Läs mer på [Mock Service Worker addon](https://storybook.js.org/addons/msw-storybook-addon).
    ```shell
-   $ npm install -D msw-storybook-addon
+   $ npm install -D msw-storybook-addon msw
    $ npx msw init .storybook/public/
    ```
    Lägg till följande i objektet i `.storybook/main.js`
