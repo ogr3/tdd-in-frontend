@@ -32,8 +32,13 @@ T.ex kan man i en story visa hur en knapp ser ut om den är aktiv och i en annan
 Man kan även manipulera input, titta på actions och mycket mer med hjälp av _addons_. Det som tas upp här skrapar bara
 på ytan.
 
+### Storyshots
 Om man använder [Storyshots](https://storybook.js.org/addons/@storybook/addon-storyshots) för snapshot-testning kommer
-var och en av dessa stories bli ett testfall. Notera dock att detta endast är till för regressionstest.
+var och en av dessa stories bli ett testfall. Notera dock att detta endast är till för regressionstest. 
+
+När man får ett regressionstestfel, så kommer man kunna se i felutskriften vad i HTML som diffar. 
+Man kan även inspektera komponenten i Storybook och se om det är OK. Om allt är korrekt kan man sedan uppdatera sitt snapshot 
+(se `test:update-snapshot` i [package.json](../package.json)). 
 
 Testa komponentens beteende med Jest
 ------------------------------------
@@ -64,7 +69,7 @@ Storybook
 
 I storybook är det förberett för att ange @Input och @Output på ett enkelt sätt med hjälp av s.k _Args_.
 
-Se kodexempel: [../src/app/labs/lab1-input-output/input-output.component.stories.ts](../src/app/labs/lab1-input-output/input-output.component.stories.ts)
+Se kodexempel: [../src/app/labs/1-input-output/input-output.component.stories.ts](../src/app/labs/1-input-output/input-output.component.stories.ts)
 
 Se även [Storybook, Args](https://storybook.js.org/docs/angular/writing-stories/args)
 för mer info.
@@ -74,7 +79,7 @@ för mer info.
 Om komponenten har beroenden till @Injectable:s, t.ex en service kan man injicera in mockade varianter av
 @Injectable-objektet med hjälp av s.k _Decorator_:s.
 
-Se körbart kodexempel i [../src/app/injectables/injectables.component.stories.ts](../src/app/injectables/injectables.component.stories.ts).
+Se körbart kodexempel i [../src/app/labs/2-injectables/injectables.component.stories.ts](../src/app/labs/2-injectables/injectables.component.stories.ts).
 
 Se [Storybook, Decorators](https://storybook.js.org/docs/angular/writing-stories/decorators#story-decorators)
 för mer info.
@@ -84,13 +89,14 @@ Ibland kan man behöva interagera med komponenten för att nå ett visst tillst�
 
 Då kan man använda s.k _interactions_.
 
-Exempel på detta finns i [../src/stories/Page.stories.ts](../src/stories/Page.stories.ts).
+Exempel på detta finns i [../src/app/labs/3-message-button/message-button.component.stories.ts](../src/app/labs/3-message-button/message-button.component.stories.ts).
 
 #### Mocka HTTP-anrop
-Det finns en Storybook-addon [Mock Service Worker](https://storybook.js.org/addons/msw-storybook-addon),
-vilken kan användas för att mocka HTTP-anrop.
+Enklast är att helt enkelt mocka Angulars HttpClient.
 
-Se kodexempel [../src/app/http/http.component.stories.ts](../src/app/http/http.component.stories.ts).
+(Det finns även en Storybook-addon [Mock Service Worker](https://storybook.js.org/addons/msw-storybook-addon), vilken kan användas för att mocka HTTP-anrop, men den känns överflödig.)
+
+Se kodexempel [../src/app/labs/4-http/http.component.stories.ts](../src/app/labs/4-http/http.component.stories.ts).
 
 Spec-test med Jest
 ------------------
@@ -106,7 +112,7 @@ osv...
 
 Detta kan sedan omsättas i en spec-struktur:
 
-Se även körbart kodexempel [../src/app/test-structure/test-structure.component.spec.ts](../src/app/test-structure/test-structure.component.spec.ts).
+Se även körbart kodexempel [../src/app/labs/5-test-structure/test-structure.component.spec.ts](../src/app/labs/5-test-structure/test-structure.component.spec.ts).
 
 ```typescript
 describe('TestStructureComponent', () => {
@@ -223,21 +229,21 @@ Sedan kan man i testfallen stoppa in värden via `Subject.next()`.
 Ett annat alternativ är att stoppa in en observable med fasta värden, dvs en `of()`
 (vilken kan importeras med `import {of as observableOf} from 'rxjs'` för att få lite tydligare namn).
 
-Exempel finns i [../src/app/observable/observable.component.spec.ts](../src/app/observable/observable.component.spec.ts).
+Exempel finns i [../src/app/labs/6-observable/observable.component.spec.ts](../src/app/labs/6-observable/observable.component.spec.ts).
 
 #### EventEmitter för @Output
 
 Sätt upp koppling mellan en funktionsmock och den `componentProperty`, som är @Output.
 
-Exempel på detta finns i [../src/app/input-output/input-output.component.spec.ts](../src/app/input-output/input-output.component.spec.ts)
-där @Output `myOutput` mappas till mocken `myOutputMock`.
+Exempel på detta finns i [../src/app/labs/1-input-output/input-output.component.spec.ts](../src/app/labs/1-input-output/input-output.component.spec.ts)
+där _@Output_:en `myOutput` mappas till mocken `myOutputMock`.
 
 #### Timers
 
 Jest har stöd för fejkade timers så att man kan styra tiden, vilket är användbart när man använder `setTimeout()` i sin
 kod.
 
-Se exempel [../src/app/timer/my-third.component.spec.ts](../src/app/timers/my-third.component.spec.ts).
+Se exempel [../src/app/labs/7-timers/delayed.component.spec.ts](../src/app/labs/7-timers/delayed.component.spec.ts).
 
 Läs mer på [Jest, Timer mocks](https://jestjs.io/docs/26.x/timer-mocks)
 
@@ -328,7 +334,7 @@ Exempel:
 
 ![COMPONENT-STRUCTURE](./COMPONENT-STRUCTURE.svg)
 
-Se kod i [../src/app/component-with-structure](../src/app/component-with-structure).
+Se kod i [../src/app/labs/8-component-with-structure](../src/app/labs/8-component-with-structure).
 
 ### Controller-logik i komponentspecifik service (presenter)
 
@@ -338,4 +344,4 @@ vanlig Typescript-klass.
 
 ![COMPONENT-STRUCTURE-WITH-PRESENTER](./COMPONENT-STRUCTURE-WITH-PRESENTER.svg)
 
-Se kod i [../src/app/component-with-presenter](../src/app/component-with-presenter).
+Se kod i [../src/app/labs/9-component-with-presenter](../src/app/labs/9-component-with-presenter).

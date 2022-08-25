@@ -1,11 +1,169 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots AppComponent/Button Primary 1`] = `
+exports[`Storyshots AppComponent Basic 1`] = `
 <storybook-wrapper>
   <app-root>
     <div>
       angular-tdd app is running!
     </div>
   </app-root>
+</storybook-wrapper>
+`;
+
+exports[`Storyshots TDD-Labbar/1. InputOutputComponent Example 1 1`] = `
+<storybook-wrapper>
+  <app-input-output-component>
+    <div
+      class="input-output-component"
+    >
+      <p>
+        Input: Kaka Banan
+      </p>
+      <button>
+        Emit Output
+      </button>
+    </div>
+  </app-input-output-component>
+</storybook-wrapper>
+`;
+
+exports[`Storyshots TDD-Labbar/2. InjectablesComponent With Emitter And Data From Service 1`] = `
+<storybook-wrapper>
+  <app-injectables-component>
+    <div
+      class="injectables-component"
+    >
+      <p
+        class="message"
+      >
+        Message fetched from service: Some mocked data from the mocked TestService
+      </p>
+    </div>
+  </app-injectables-component>
+</storybook-wrapper>
+`;
+
+exports[`Storyshots TDD-Labbar/3. MessageButton A Before Click 1`] = `
+<storybook-wrapper>
+  <app-message-button>
+    <div
+      class="message-button"
+    >
+      <button>
+        Klicka
+      </button>
+    </div>
+  </app-message-button>
+</storybook-wrapper>
+`;
+
+exports[`Storyshots TDD-Labbar/3. MessageButton B After Click 1`] = `
+<storybook-wrapper>
+  <app-message-button>
+    <div
+      class="message-button"
+    >
+      <button>
+        Klicka
+      </button>
+    </div>
+  </app-message-button>
+</storybook-wrapper>
+`;
+
+exports[`Storyshots TDD-Labbar/4. HttpComponent Primary 1`] = `
+<storybook-wrapper>
+  <app-http>
+    <div
+      style="border: 1px grey solid; border-radius: 5px; background: lightgrey; padding: 0.25rem 1.0rem;"
+    >
+      <div>
+        Data from HTTP request: {
+    "name": "Banan",
+    "payload": "2022-08-26T00:00:00.000Z"
+  }
+      </div>
+      <button>
+        Send HTTP Request
+      </button>
+    </div>
+  </app-http>
+</storybook-wrapper>
+`;
+
+exports[`Storyshots TDD-Labbar/5. TestStructureComponent Primary 1`] = `
+<storybook-wrapper>
+  <app-test-structure-component>
+    <div
+      style="border: 1px grey solid; border-radius: 5px; background: lightgrey; padding: 0.25rem 1.0rem;"
+    >
+      <button>
+        B
+      </button>
+      <p
+        class="message"
+      >
+        A
+      </p>
+    </div>
+  </app-test-structure-component>
+</storybook-wrapper>
+`;
+
+exports[`Storyshots TDD-Labbar/6. ObservableComponent Primary 1`] = `
+<storybook-wrapper>
+  <app-my-third>
+    <div
+      style="border: 1px grey solid; border-radius: 5px; background: lightgrey; padding: 0.25rem 1.0rem;"
+    >
+      <div>
+        <h4>
+          Notifications
+        </h4>
+        <p>
+          notif2 from notifications$ observable
+        </p>
+      </div>
+    </div>
+  </app-my-third>
+</storybook-wrapper>
+`;
+
+exports[`Storyshots TDD-Labbar/9. MyOtherContainerComponent Primary 1`] = `
+<storybook-wrapper>
+  <app-my-other-container>
+    <app-my-dumb1
+      style="display: block; margin-bottom: 0.5rem;"
+    >
+      <div
+        style="border: 1px grey solid; border-radius: 5px; background: lightgrey; padding: 0.25rem 1.0rem;"
+      >
+        <p>
+          A = Data A
+        </p>
+        <button>
+          Uppdatera B
+        </button>
+        <p>
+          Count: 0
+        </p>
+      </div>
+    </app-my-dumb1>
+    <app-my-dumb2>
+      <div
+        style="border: 1px steelblue solid; border-radius: 5px; background: lightblue; padding: 0.25rem 1.0rem;"
+      >
+        <p>
+          C = 42
+        </p>
+        <button>
+          Uppdatera D 
+        </button>
+        <p>
+          Result: 
+        </p>
+      </div>
+    </app-my-dumb2>
+  </app-my-other-container>
 </storybook-wrapper>
 `;

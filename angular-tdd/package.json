@@ -9,7 +9,7 @@
     "test": "ng test",
     "test:update-snapshot": "npm run test -- --update-snapshot",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
-    "storybook": " start-storybook -p 6006",
+    "storybook": " start-storybook -p 6006 ",
     "build-storybook": "npm run docs:json && build-storybook"
   },
   "private": true,
@@ -48,11 +48,6 @@
     "@types/jest": "latest",
     "babel-loader": "^8.2.5",
     "jest": "latest",
-    "msw": "^0.45.0",
-    "msw-storybook-addon": "^1.6.3",
     "typescript": "~4.7.2"
-  },
-  "msw": {
-    "workerDirectory": ".storybook/public"
   }
 }
