@@ -1,5 +1,6 @@
 TDD i frontend
 ==============
+Se även [Slides](https://docs.google.com/presentation/d/1l9-XUvZrfjSSD26OhmGLg2Szya5WZzN9o1_hDf5u3JA/edit?usp=sharing).
 
 Angular
 -------
