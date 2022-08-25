@@ -1,5 +1,37 @@
 Test-driven Utveckling i frontend med Storybook, Jest och Testing Library
 -------------------------------------------------------------------------
+<!-- TOC -->
+  * [Test-driven Utveckling i frontend med Storybook, Jest och Testing Library](#test-driven-utveckling-i-frontend-med-storybook-jest-och-testing-library)
+  * [Process](#process)
+  * [Testa komponentens utseende och statiska egenskaper med Storybook](#testa-komponentens-utseende-och-statiska-egenskaper-med-storybook)
+    * [Storyshots](#storyshots)
+  * [Testa komponentens beteende med Jest](#testa-komponentens-beteende-med-jest)
+  * [Testa Service](#testa-service)
+  * [TDD med Storybook och Jest](#tdd-med-storybook-och-jest)
+  * [Storybook](#storybook)
+    * [Recept för olika scenarior](#recept-fr-olika-scenarior)
+      * [Hantera @Input och @Output](#hantera-input-och-output)
+      * [Hur hantera beroenden till @Injectable:s](#hur-hantera-beroenden-till-injectable--s)
+      * [Interactions](#interactions)
+      * [Mocka HTTP-anrop](#mocka-http-anrop)
+  * [Spec-test med Jest](#spec-test-med-jest)
+    * [Struktur för ett test](#struktur-fr-ett-test)
+      * [Iteration 1](#iteration-1)
+      * [Iteration 2](#iteration-2)
+    * [Mockning](#mockning)
+      * [Observables](#observables)
+      * [EventEmitter för @Output](#eventemitter-fr-output)
+      * [Timers](#timers)
+  * [Testing Library](#testing-library)
+    * [Vanliga saker](#vanliga-saker)
+      * [@Input och @Output till komponenten](#input-och-output-till-komponenten)
+      * [@Injectable](#injectable)
+      * [DOM API](#dom-api)
+  * [Designmönster för komponenter](#designmnster-fr-komponenter)
+    * [Dumma (presentation) vs smarta (container) komponenter](#dumma--presentation--vs-smarta--container--komponenter)
+    * [Controller-logik i komponentspecifik service (presenter)](#controller-logik-i-komponentspecifik-service--presenter-)
+<!-- TOC -->
+
 Denna är en beskrivning för hur man kan utföra TDD i frontend. Den beskriver process, verktyg samt lite designmönster
 för att göra komponenter mer testbara.
 
@@ -345,3 +377,4 @@ vanlig Typescript-klass.
 ![COMPONENT-STRUCTURE-WITH-PRESENTER](./COMPONENT-STRUCTURE-WITH-PRESENTER.svg)
 
 Se kod i [../src/app/labs/9-component-with-presenter](../src/app/labs/9-component-with-presenter).
+![]()
