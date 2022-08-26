@@ -1,10 +1,16 @@
-import {Component} from "@angular/core";
+import {Component, EventEmitter, Input, Output} from "@angular/core";
+import {TestService} from "../test.service";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-new-input-output',
   template: `
     <div class="new-input-output">
-      Test
+      <p>Input: {{myInput}}</p>
+      <p>Testservice: {{testService.getSomeData()}}</p>
+      <button (click)="counter = counter + 1; myOutput.emit('Banan')">Emit</button>
+      <div>Counter: {{counter}}</div>
+      <button (click)="httpClient.post('/backend', 'Message to backend').subscribe()">Post</button>
     </div>
   `,
   styles: [`
@@ -17,5 +23,13 @@ import {Component} from "@angular/core";
   `]
 })
 export class NewInputOutputComponent {
+  @Input()
+  myInput?: string
+  @Output()
+  readonly myOutput = new EventEmitter<string>()
 
+  counter: number = 0
+
+  constructor(readonly testService: TestService, readonly httpClient: HttpClient) {
+  }
 }

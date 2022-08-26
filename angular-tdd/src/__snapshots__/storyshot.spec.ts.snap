@@ -10,13 +10,105 @@ exports[`Storyshots AppComponent Basic 1`] = `
 </storybook-wrapper>
 `;
 
+exports[`Storyshots LAB/NewInputOutputComponent After Emit Click 1`] = `
+<storybook-wrapper>
+  <app-new-input-output>
+    <div
+      class="new-input-output"
+    >
+      <p>
+        Input: 
+      </p>
+      <p>
+        Testservice: Some data
+      </p>
+      <button>
+        Emit
+      </button>
+      <div>
+        Counter: 0
+      </div>
+      <button>
+        Post
+      </button>
+    </div>
+  </app-new-input-output>
+</storybook-wrapper>
+`;
+
 exports[`Storyshots LAB/NewInputOutputComponent Basic 1`] = `
 <storybook-wrapper>
   <app-new-input-output>
     <div
       class="new-input-output"
     >
-       Test 
+      <p>
+        Input: kaka
+      </p>
+      <p>
+        Testservice: Some data
+      </p>
+      <button>
+        Emit
+      </button>
+      <div>
+        Counter: 0
+      </div>
+      <button>
+        Post
+      </button>
+    </div>
+  </app-new-input-output>
+</storybook-wrapper>
+`;
+
+exports[`Storyshots LAB/NewInputOutputComponent With Backend Post 1`] = `
+<storybook-wrapper>
+  <app-new-input-output>
+    <div
+      class="new-input-output"
+    >
+      <p>
+        Input: 
+      </p>
+      <p>
+        Testservice: Some data
+      </p>
+      <button>
+        Emit
+      </button>
+      <div>
+        Counter: 0
+      </div>
+      <button>
+        Post
+      </button>
+    </div>
+  </app-new-input-output>
+</storybook-wrapper>
+`;
+
+exports[`Storyshots LAB/NewInputOutputComponent With Injected Data 1`] = `
+<storybook-wrapper>
+  <app-new-input-output>
+    <div
+      class="new-input-output"
+    >
+      <p>
+        Input: 
+      </p>
+      <p>
+        Testservice: Apa
+      </p>
+      <button>
+        Emit
+      </button>
+      <div>
+        Counter: 0
+      </div>
+      <button>
+        Post
+      </button>
     </div>
   </app-new-input-output>
 </storybook-wrapper>
