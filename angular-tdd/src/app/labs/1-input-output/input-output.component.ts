@@ -24,15 +24,16 @@ export interface MyOutputData {
     </div>
   `,
   styles: [`
-      .input-output-component {
-        border: 1px grey solid;
-        border-radius: 5px;
-        background: lightgrey;
-        padding: 0.25rem 1.0rem;
-      }
-      .input-output-component > button {
-        margin-top: 0.5rem;
-      }
+    .input-output-component {
+      border: 1px grey solid;
+      border-radius: 5px;
+      background: lightgrey;
+      padding: 0.25rem 1.0rem;
+    }
+
+    .input-output-component > button {
+      margin-top: 0.5rem;
+    }
   `]
 })
 export class InputOutputComponent {

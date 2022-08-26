@@ -10,6 +10,18 @@ exports[`Storyshots AppComponent Basic 1`] = `
 </storybook-wrapper>
 `;
 
+exports[`Storyshots LAB/NewInputOutputComponent Basic 1`] = `
+<storybook-wrapper>
+  <app-new-input-output>
+    <div
+      class="new-input-output"
+    >
+       Test 
+    </div>
+  </app-new-input-output>
+</storybook-wrapper>
+`;
+
 exports[`Storyshots TDD-Labbar/1. InputOutputComponent Example 1 1`] = `
 <storybook-wrapper>
   <app-input-output-component>
